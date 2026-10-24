@@ -1,0 +1,35 @@
+name: Deploy Bao Tieu Xanh to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Prepare gh-pages bundle
+        run: |
+          mkdir -p _site/demo-static
+          cp -r demo-static/* _site/
+          cp -r demo-static/* _site/demo-static/
+          touch _site/.nojekyll
+
+      - name: Push to gh-pages branch
+        run: |
+          cd _site
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b gh-pages
+          git add -A
+          git commit -m "Deploy Bao Tieu Xanh to GitHub Pages"
+          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages

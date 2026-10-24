@@ -1,0 +1,8 @@
+node_modules/
+.playwright/
+.playwright-cli/
+.aider-desk/
+.claude/
+.agents/
+.DS_Store
+Thumbs.db
