@@ -1842,6 +1842,7 @@ function initFramerScrollEffects() {
 
 function initInteractiveTiltAndSpotlight() {
   let activeCard = null;
+  const liquidSelector = ".liquid-capsule, .button, .view-all-btn, .cart-trigger, .motion-toggle-btn, .icon-action-btn, .filter-chip";
 
   function resetCard(card) {
     if (!card) return;
@@ -1851,6 +1852,18 @@ function initInteractiveTiltAndSpotlight() {
 
   document.addEventListener("pointermove", function (event) {
     if (prefersReducedMotion() || event.pointerType === "touch") return;
+
+    const liquidBtn = event.target.closest && event.target.closest(liquidSelector);
+    if (liquidBtn) {
+      const btnRect = liquidBtn.getBoundingClientRect();
+      if (btnRect.width && btnRect.height) {
+        const lx = event.clientX - btnRect.left;
+        const ly = event.clientY - btnRect.top;
+        liquidBtn.style.setProperty("--liquid-x", lx.toFixed(1) + "px");
+        liquidBtn.style.setProperty("--liquid-y", ly.toFixed(1) + "px");
+      }
+    }
+
     const card = event.target.closest && event.target.closest(".product-card, .bento-card");
     if (activeCard && activeCard !== card) {
       resetCard(activeCard);
@@ -1880,6 +1893,19 @@ function initInteractiveTiltAndSpotlight() {
       activeCard = null;
     }
   }, { passive: true });
+
+  document.querySelectorAll(".sub-hero-step.liquid-capsule").forEach(function (capsule) {
+    capsule.addEventListener("click", function () {
+      document.querySelectorAll(".sub-hero-step.liquid-capsule").forEach(function (node) {
+        node.classList.toggle("is-active", node === capsule);
+      });
+      const targetSel = capsule.getAttribute("data-scroll-to");
+      const targetEl = targetSel ? document.querySelector(targetSel) : null;
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: prefersReducedMotion() ? "auto" : "smooth", block: "start" });
+      }
+    });
+  });
 }
 
 function initMotionToggle() {
