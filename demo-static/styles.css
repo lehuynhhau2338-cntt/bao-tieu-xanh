@@ -3337,8 +3337,8 @@ td:last-child {
   .main-navigation {
     display: inline-flex;
     align-items: center;
-    gap: 0.38rem;
-    padding: 0.34rem 0.46rem;
+    gap: 0.24rem;
+    padding: 0.26rem 0.34rem;
     border-radius: 999px;
     background: linear-gradient(155deg, rgba(255, 255, 255, 0.52) 0%, rgba(226, 238, 229, 0.34) 100%);
     backdrop-filter: blur(22px) saturate(190%);
@@ -3356,7 +3356,9 @@ td:last-child {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  padding: 0.46rem 0.88rem;
+  padding: 0.38rem 0.66rem;
+  font-size: 0.84rem;
+  white-space: nowrap;
   border-radius: 999px;
   background: linear-gradient(165deg, rgba(255, 255, 255, 0.66) 0%, rgba(220, 234, 224, 0.36) 100%);
   backdrop-filter: blur(16px) saturate(185%);
