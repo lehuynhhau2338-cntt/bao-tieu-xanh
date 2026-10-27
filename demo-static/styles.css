@@ -972,7 +972,7 @@ p {
   width: min(1100px, 96vw);
   height: 360px;
   margin-left: calc(min(1100px, 96vw) / -2);
-  background: radial-gradient(50% 50% at 50% 0%, rgba(43, 138, 68, 0.24) 0%, rgba(214, 154, 56, 0.1) 48%, rgba(43, 138, 68, 0) 95%);
+  background: radial-gradient(50% 50% at 50% 0%, rgba(43, 138, 68, 0.22) 0%, rgba(176, 236, 198, 0.24) 48%, rgba(43, 138, 68, 0) 95%);
   pointer-events: none;
   z-index: 0;
 }
@@ -3256,7 +3256,7 @@ td:last-child {
 }
 
 /* ==========================================================================
-   LIQUID GLASS & 3D REFRACTIVE FROSTED GLASS SYSTEM (Inspired by Liquid Button)
+   PURE CRYSTAL & EMERALD-MIST 3D LIQUID GLASS SYSTEM (ALL-SITE FROSTED GLASS)
    ========================================================================== */
 
 .liquid-svg-defs {
@@ -3267,7 +3267,7 @@ td:last-child {
   overflow: hidden;
 }
 
-/* Ambient Floating Color Orbs behind Frosted Glass Panels */
+/* Ambient Floating Crystal/Mint Orbs behind Frosted Glass Panels (No Orange) */
 .ambient-glass-orbs {
   position: fixed;
   inset: 0;
@@ -3279,44 +3279,44 @@ td:last-child {
 .glass-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(68px);
-  opacity: 0.46;
+  filter: blur(72px);
+  opacity: 0.48;
   will-change: transform;
   animation: liquid-orb-float 16s ease-in-out infinite alternate;
 }
 
 .glass-orb-emerald {
-  width: 440px;
-  height: 440px;
-  top: 6%;
-  left: -6%;
-  background: radial-gradient(circle, rgba(43, 152, 76, 0.42) 0%, rgba(43, 152, 76, 0) 72%);
+  width: 460px;
+  height: 460px;
+  top: 4%;
+  left: -5%;
+  background: radial-gradient(circle, rgba(46, 164, 88, 0.38) 0%, rgba(46, 164, 88, 0) 72%);
 }
 
 .glass-orb-amber {
-  width: 480px;
-  height: 480px;
-  top: 22%;
-  right: -7%;
-  background: radial-gradient(circle, rgba(236, 168, 56, 0.38) 0%, rgba(214, 134, 32, 0) 72%);
+  width: 500px;
+  height: 500px;
+  top: 20%;
+  right: -6%;
+  background: radial-gradient(circle, rgba(148, 224, 176, 0.42) 0%, rgba(148, 224, 176, 0) 72%);
   animation-delay: -4s;
 }
 
 .glass-orb-sage {
-  width: 520px;
-  height: 520px;
-  top: 56%;
-  left: 14%;
-  background: radial-gradient(circle, rgba(58, 168, 96, 0.3) 0%, rgba(58, 168, 96, 0) 74%);
+  width: 540px;
+  height: 540px;
+  top: 54%;
+  left: 12%;
+  background: radial-gradient(circle, rgba(64, 178, 108, 0.32) 0%, rgba(64, 178, 108, 0) 74%);
   animation-delay: -8s;
 }
 
 .glass-orb-gold {
-  width: 420px;
-  height: 420px;
-  bottom: 6%;
-  right: 12%;
-  background: radial-gradient(circle, rgba(242, 184, 75, 0.34) 0%, rgba(242, 184, 75, 0) 72%);
+  width: 440px;
+  height: 440px;
+  bottom: 5%;
+  right: 10%;
+  background: radial-gradient(circle, rgba(176, 236, 198, 0.38) 0%, rgba(176, 236, 198, 0) 72%);
   animation-delay: -11s;
 }
 
@@ -3332,7 +3332,98 @@ td:last-child {
   }
 }
 
-/* 1. 3D Liquid Glass Capsule Trio (#sub-hero-variant-rail) — Direct Reference Match */
+/* 1. Header Navigation Frosted Liquid Glass Pills (Nông sản, Mua chung, Nông hộ, Giá thị trường, Hỗ trợ nông dân, Theo dõi đơn) */
+@media (min-width: 1081px) {
+  .main-navigation {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.38rem;
+    padding: 0.34rem 0.46rem;
+    border-radius: 999px;
+    background: linear-gradient(155deg, rgba(255, 255, 255, 0.52) 0%, rgba(226, 238, 229, 0.34) 100%);
+    backdrop-filter: blur(22px) saturate(190%);
+    -webkit-backdrop-filter: blur(22px) saturate(190%);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow:
+      0 12px 28px -8px rgba(15, 38, 24, 0.12),
+      inset 0 2px 2.5px rgba(255, 255, 255, 0.96),
+      inset 0 -2px 4px rgba(255, 255, 255, 0.55);
+  }
+}
+
+.main-navigation > a,
+.main-navigation > .nav-link {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 0.46rem 0.88rem;
+  border-radius: 999px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.66) 0%, rgba(220, 234, 224, 0.36) 100%);
+  backdrop-filter: blur(16px) saturate(185%);
+  -webkit-backdrop-filter: blur(16px) saturate(185%);
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  box-shadow:
+    0 6px 14px -4px rgba(15, 36, 22, 0.1),
+    inset 0 1.8px 2px rgba(255, 255, 255, 0.96),
+    inset 0 -1.8px 3.5px rgba(255, 255, 255, 0.54);
+  transition:
+    transform 340ms cubic-bezier(0.22, 1.35, 0.36, 1),
+    box-shadow 280ms ease,
+    background 280ms ease,
+    border-color 260ms ease,
+    color 240ms ease;
+}
+
+.main-navigation > a::before,
+.main-navigation > .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 1.5px;
+  left: 10%;
+  right: 10%;
+  height: 44%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.06) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.main-navigation > a::after,
+.main-navigation > .nav-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    90px circle at var(--liquid-x, 50%) var(--liquid-y, 50%),
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(206, 240, 218, 0.55) 48%,
+    rgba(255, 255, 255, 0) 80%
+  );
+  opacity: 0;
+  transition: opacity 240ms ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.main-navigation > a:hover,
+.main-navigation > .nav-link:hover {
+  transform: translateY(-2px) scale(1.03);
+  color: var(--brand-strong);
+  border-color: rgba(255, 255, 255, 0.98);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(216, 242, 224, 0.68) 100%);
+  box-shadow:
+    0 12px 24px -6px rgba(16, 52, 30, 0.18),
+    inset 0 2.5px 3px rgba(255, 255, 255, 1),
+    inset 0 -2px 5px rgba(255, 255, 255, 0.76);
+}
+
+.main-navigation > a:hover::after,
+.main-navigation > .nav-link:hover::after {
+  opacity: 1;
+}
+
+/* 2. 3D Liquid Glass Capsule Trio (#sub-hero-variant-rail) — Pure Crystal Frosted Glass (No Orange) */
 .sub-hero-variant-rail.liquid-capsule-dock {
   display: inline-flex;
   flex-wrap: wrap;
@@ -3341,15 +3432,15 @@ td:last-child {
   gap: 0.85rem;
   padding: 0.7rem 0.85rem;
   border-radius: 999px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.42) 0%, rgba(232, 240, 233, 0.24) 100%);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.46) 0%, rgba(226, 238, 229, 0.28) 100%);
   backdrop-filter: blur(24px) saturate(190%);
   -webkit-backdrop-filter: blur(24px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.84);
   box-shadow:
     0 22px 46px -12px rgba(16, 40, 24, 0.16),
     0 4px 12px rgba(16, 40, 24, 0.06),
-    inset 0 2px 3px rgba(255, 255, 255, 0.92),
-    inset 0 -2px 6px rgba(255, 255, 255, 0.48);
+    inset 0 2px 3px rgba(255, 255, 255, 0.94),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.52);
 }
 
 .sub-hero-step.liquid-capsule {
@@ -3362,23 +3453,22 @@ td:last-child {
   padding: 0.68rem 1.2rem 0.68rem 0.8rem;
   border-radius: 999px;
   cursor: pointer;
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-size: 0.84rem;
   font-weight: var(--weight-semibold);
-  color: #1f3528;
-  /* Smoked Frosted 3D Glass Pill (like Sleep / Do Not Disturb in reference) */
+  color: #1c3324;
   background:
-    linear-gradient(165deg, rgba(255, 255, 255, 0.68) 0%, rgba(212, 224, 215, 0.36) 52%, rgba(182, 198, 186, 0.44) 100%);
-  backdrop-filter: blur(20px) saturate(190%);
-  -webkit-backdrop-filter: blur(20px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.82);
+    linear-gradient(165deg, rgba(255, 255, 255, 0.64) 0%, rgba(210, 224, 214, 0.36) 52%, rgba(184, 202, 190, 0.44) 100%);
+  backdrop-filter: blur(22px) saturate(190%);
+  -webkit-backdrop-filter: blur(22px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.84);
   box-shadow:
-    0 14px 28px -8px rgba(15, 35, 22, 0.2),
-    0 3px 8px rgba(15, 35, 22, 0.09),
+    0 14px 28px -8px rgba(15, 35, 22, 0.18),
+    0 3px 8px rgba(15, 35, 22, 0.08),
     inset 0 2.5px 3px rgba(255, 255, 255, 0.96),
     inset 0 -2.5px 5px rgba(255, 255, 255, 0.58),
-    inset 3px 0 8px rgba(255, 255, 255, 0.42),
-    inset 0 -8px 16px rgba(20, 48, 30, 0.08);
+    inset 3px 0 8px rgba(255, 255, 255, 0.44),
+    inset 0 -8px 16px rgba(20, 48, 30, 0.07);
   transition:
     transform 420ms cubic-bezier(0.22, 1.35, 0.36, 1),
     box-shadow 360ms ease,
@@ -3387,7 +3477,6 @@ td:last-child {
     border-color 280ms ease;
 }
 
-/* Top curved glass tube reflection arc */
 .sub-hero-step.liquid-capsule::before {
   content: "";
   position: absolute;
@@ -3396,21 +3485,21 @@ td:last-child {
   right: 10%;
   height: 44%;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.08) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.08) 100%);
   pointer-events: none;
   z-index: 0;
 }
 
-/* Cursor-tracked Warm Liquid Amber/Gold internal caustic glow */
+/* Pure Crystal-White & Mint internal caustic glow (No Orange) */
 .sub-hero-step.liquid-capsule::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
   background: radial-gradient(
-    120px circle at var(--liquid-x, 50%) var(--liquid-y, 50%),
-    rgba(255, 232, 168, 0.88) 0%,
-    rgba(235, 160, 46, 0.52) 44%,
+    125px circle at var(--liquid-x, 50%) var(--liquid-y, 50%),
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(204, 240, 216, 0.58) 46%,
     rgba(255, 255, 255, 0) 78%
   );
   opacity: 0;
@@ -3431,10 +3520,10 @@ td:last-child {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.68);
   box-shadow:
-    inset 0 1.5px 2px rgba(255, 255, 255, 0.95),
-    0 3px 8px rgba(15, 35, 22, 0.12);
+    inset 0 1.5px 2px rgba(255, 255, 255, 0.96),
+    0 3px 8px rgba(15, 35, 22, 0.11);
   color: var(--brand-strong);
   transition: transform 360ms cubic-bezier(0.22, 1.35, 0.36, 1), background 280ms ease, color 280ms ease;
 }
@@ -3446,21 +3535,21 @@ td:last-child {
   margin-left: 0.25rem;
 }
 
-/* Active & Hovered 3D Liquid Capsule — Luminous Warm Honey-Gold / Amber Glass (3rd capsule in reference photo) */
+/* Active & Hovered 3D Liquid Capsule — Luminous Crystal-Clear & Ice-Emerald Glass */
 .sub-hero-step.liquid-capsule:hover,
 .sub-hero-step.liquid-capsule.is-active {
   transform: translateY(-4px) scale(1.035);
-  color: #3a2004;
-  border-color: rgba(255, 246, 218, 0.95);
+  color: #0e381e;
+  border-color: rgba(255, 255, 255, 0.98);
   background:
-    linear-gradient(135deg, rgba(255, 236, 184, 0.92) 0%, rgba(235, 168, 68, 0.86) 52%, rgba(198, 122, 28, 0.84) 100%);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(220, 244, 228, 0.76) 52%, rgba(190, 230, 204, 0.68) 100%);
   box-shadow:
-    0 20px 38px -8px rgba(196, 122, 24, 0.42),
-    0 6px 16px rgba(196, 122, 24, 0.24),
-    inset 0 3px 4px rgba(255, 255, 255, 0.98),
-    inset 0 -3px 6px rgba(255, 235, 186, 0.75),
-    inset 4px 0 12px rgba(255, 248, 224, 0.62),
-    inset 0 -10px 20px rgba(142, 76, 8, 0.22);
+    0 20px 38px -8px rgba(16, 58, 32, 0.24),
+    0 6px 16px rgba(16, 58, 32, 0.12),
+    inset 0 3px 4px rgba(255, 255, 255, 1),
+    inset 0 -3px 6px rgba(255, 255, 255, 0.82),
+    inset 4px 0 12px rgba(255, 255, 255, 0.68),
+    inset 0 -10px 20px rgba(24, 92, 48, 0.1);
 }
 
 .sub-hero-step.liquid-capsule:hover::after,
@@ -3470,8 +3559,8 @@ td:last-child {
 
 .sub-hero-step.liquid-capsule:hover .liquid-capsule-icon,
 .sub-hero-step.liquid-capsule.is-active .liquid-capsule-icon {
-  background: rgba(255, 252, 240, 0.88);
-  color: #8a4b08;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--brand);
   transform: scale(1.08) rotate(-4deg);
 }
 
@@ -3479,18 +3568,21 @@ td:last-child {
   transform: translateY(-1px) scale(0.985);
 }
 
-/* 2. Universal 3D Liquid Glass Buttons (.button, .view-all-btn, .cart-trigger, .motion-toggle-btn, .filter-chip) */
+/* 3. Universal 3D Frosted Liquid Glass Interactive Controls Across All Sections */
 .button,
 .view-all-btn,
 .cart-trigger,
 .motion-toggle-btn,
 .icon-action-btn,
-.filter-chip {
+#category-filters button,
+.recent-order-chip,
+.admin-tabs button,
+.close-button {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  backdrop-filter: blur(18px) saturate(185%);
-  -webkit-backdrop-filter: blur(18px) saturate(185%);
+  backdrop-filter: blur(20px) saturate(190%);
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
   transition:
     transform 380ms cubic-bezier(0.22, 1.35, 0.36, 1),
     box-shadow 320ms ease,
@@ -3499,12 +3591,16 @@ td:last-child {
     color 260ms ease;
 }
 
-/* Top glossy glass cylinder reflection on all buttons & pills */
+/* Top glossy glass cylinder reflection arc on all buttons & pills */
 .button::before,
 .view-all-btn::before,
 .cart-trigger::before,
 .motion-toggle-btn::before,
-.filter-chip::before {
+.icon-action-btn::before,
+#category-filters button::before,
+.recent-order-chip::before,
+.admin-tabs button::before,
+.close-button::before {
   content: "";
   position: absolute;
   top: 1.5px;
@@ -3512,25 +3608,29 @@ td:last-child {
   right: 9%;
   height: 42%;
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(255, 255, 255, 0.04) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0.05) 100%);
   pointer-events: none;
   z-index: 0;
 }
 
-/* Cursor-reactive Liquid Light Pool inside buttons & pills */
+/* Cursor-reactive Pure Crystal-White & Mint Light Pool inside buttons & pills */
 .button::after,
 .view-all-btn::after,
 .cart-trigger::after,
 .motion-toggle-btn::after,
-.filter-chip::after {
+.icon-action-btn::after,
+#category-filters button::after,
+.recent-order-chip::after,
+.admin-tabs button::after,
+.close-button::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
   background: radial-gradient(
     115px circle at var(--liquid-x, 50%) var(--liquid-y, 50%),
-    rgba(255, 232, 172, 0.68) 0%,
-    rgba(236, 166, 56, 0.32) 48%,
+    rgba(255, 255, 255, 0.88) 0%,
+    rgba(202, 240, 214, 0.45) 48%,
     rgba(255, 255, 255, 0) 78%
   );
   opacity: 0;
@@ -3543,7 +3643,8 @@ td:last-child {
 .view-all-btn > *,
 .cart-trigger > *,
 .motion-toggle-btn > *,
-.filter-chip > * {
+.icon-action-btn > *,
+#category-filters button > * {
   position: relative;
   z-index: 1;
 }
@@ -3552,178 +3653,281 @@ td:last-child {
 .view-all-btn:hover::after,
 .cart-trigger:hover::after,
 .motion-toggle-btn:hover::after,
-.filter-chip:hover::after {
+.icon-action-btn:hover::after,
+#category-filters button:hover::after,
+.recent-order-chip:hover::after,
+.admin-tabs button:hover::after,
+.close-button:hover::after {
   opacity: 1;
 }
 
-/* Primary Dark Emerald 3D Liquid Glass Button */
+/* Primary Deep Emerald 3D Frosted Liquid Glass Button */
 .button-dark {
-  background: linear-gradient(145deg, rgba(32, 118, 62, 0.92) 0%, rgba(18, 78, 40, 0.9) 58%, rgba(12, 56, 28, 0.94) 100%);
-  border: 1px solid rgba(178, 242, 198, 0.55);
+  background: linear-gradient(145deg, rgba(34, 122, 64, 0.88) 0%, rgba(20, 82, 42, 0.86) 58%, rgba(14, 58, 30, 0.9) 100%);
+  border: 1px solid rgba(204, 248, 218, 0.65);
   box-shadow:
-    0 14px 28px -8px rgba(15, 62, 32, 0.38),
-    0 4px 10px rgba(15, 62, 32, 0.18),
-    inset 0 2px 3px rgba(255, 255, 255, 0.68),
-    inset 0 -2px 5px rgba(142, 232, 172, 0.35),
-    inset 2px 0 8px rgba(255, 255, 255, 0.22);
+    0 14px 28px -8px rgba(15, 62, 32, 0.34),
+    0 4px 10px rgba(15, 62, 32, 0.16),
+    inset 0 2px 3px rgba(255, 255, 255, 0.74),
+    inset 0 -2px 5px rgba(164, 240, 188, 0.38),
+    inset 2px 0 8px rgba(255, 255, 255, 0.26);
 }
 
 .button-dark:hover {
   transform: translateY(-3px) scale(1.025);
-  border-color: rgba(255, 236, 178, 0.82);
+  border-color: rgba(255, 255, 255, 0.92);
+  background: linear-gradient(145deg, rgba(40, 136, 72, 0.92) 0%, rgba(22, 92, 48, 0.9) 100%);
   box-shadow:
-    0 20px 36px -8px rgba(18, 76, 38, 0.46),
-    0 6px 16px rgba(218, 148, 36, 0.25),
-    inset 0 2.5px 4px rgba(255, 255, 255, 0.88),
-    inset 0 -3px 6px rgba(255, 218, 132, 0.48);
+    0 20px 36px -8px rgba(18, 76, 38, 0.42),
+    0 6px 16px rgba(28, 112, 56, 0.22),
+    inset 0 2.5px 4px rgba(255, 255, 255, 0.92),
+    inset 0 -3px 6px rgba(184, 246, 204, 0.52);
 }
 
-/* Translucent Smoked/Clear Liquid Glass Outline Buttons */
+/* Clear & Smoked Frosted Liquid Glass Buttons (.button-outline, .button-light, .view-all-btn, .cart-trigger, .motion-toggle-btn, .icon-action-btn, .close-button) */
 .button-outline,
+.button-light,
 .view-all-btn,
 .cart-trigger,
-.icon-action-btn {
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.74) 0%, rgba(235, 242, 236, 0.46) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.88);
+.motion-toggle-btn,
+.icon-action-btn,
+.close-button {
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.72) 0%, rgba(224, 236, 227, 0.44) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   box-shadow:
     0 12px 24px -8px rgba(16, 38, 24, 0.14),
     0 2px 6px rgba(16, 38, 24, 0.06),
+    inset 0 2px 2.5px rgba(255, 255, 255, 0.98),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.button-outline:hover,
+.button-light:hover,
+.view-all-btn:hover,
+.cart-trigger:hover,
+.motion-toggle-btn:hover,
+.icon-action-btn:hover,
+.close-button:hover {
+  transform: translateY(-3px) scale(1.025);
+  color: #0e381e;
+  border-color: rgba(255, 255, 255, 1);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(214, 240, 222, 0.72) 100%);
+  box-shadow:
+    0 18px 34px -8px rgba(16, 56, 32, 0.2),
+    inset 0 2.5px 3.5px rgba(255, 255, 255, 1),
+    inset 0 -2.5px 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Category Filter Buttons (#category-filters button) as 3D Frosted Liquid Glass Capsules */
+#category-filters button {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.68) 0%, rgba(220, 234, 224, 0.42) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  box-shadow:
+    0 8px 18px -6px rgba(16, 38, 24, 0.12),
     inset 0 2px 2.5px rgba(255, 255, 255, 0.96),
     inset 0 -2px 4px rgba(255, 255, 255, 0.56);
 }
 
-.button-outline:hover,
-.view-all-btn:hover,
-.cart-trigger:hover,
-.icon-action-btn:hover {
-  transform: translateY(-3px) scale(1.025);
-  color: #382005;
-  border-color: rgba(255, 242, 204, 0.96);
-  background: linear-gradient(135deg, rgba(255, 240, 198, 0.88) 0%, rgba(238, 178, 82, 0.76) 100%);
-  box-shadow:
-    0 18px 34px -8px rgba(196, 124, 24, 0.32),
-    inset 0 2.5px 3.5px rgba(255, 255, 255, 0.98),
-    inset 0 -2.5px 5px rgba(255, 232, 178, 0.72);
-}
-
-/* Category Filter Pills (.filter-chip) as 3D Liquid Glass Capsules */
-.filter-chip {
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.72) 0%, rgba(226, 236, 228, 0.42) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.86);
-  box-shadow:
-    0 8px 18px -6px rgba(16, 38, 24, 0.12),
-    inset 0 2px 2.5px rgba(255, 255, 255, 0.95),
-    inset 0 -2px 4px rgba(255, 255, 255, 0.52);
-}
-
-.filter-chip:hover {
+#category-filters button:hover {
   transform: translateY(-2px) scale(1.03);
-  border-color: rgba(255, 238, 192, 0.94);
-  background: linear-gradient(135deg, rgba(255, 242, 206, 0.88) 0%, rgba(238, 184, 92, 0.72) 100%);
-  color: #382005;
+  border-color: rgba(255, 255, 255, 0.98);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(214, 240, 222, 0.72) 100%);
+  color: #0e381e;
 }
 
-.filter-chip.is-active {
-  background: linear-gradient(140deg, rgba(32, 122, 64, 0.92) 0%, rgba(18, 76, 38, 0.92) 100%);
+#category-filters button[aria-pressed="true"] {
+  background: linear-gradient(145deg, rgba(32, 122, 64, 0.9) 0%, rgba(18, 76, 38, 0.9) 100%);
   color: #ffffff;
-  border-color: rgba(186, 246, 204, 0.72);
+  border-color: rgba(196, 246, 212, 0.78);
   box-shadow:
-    0 12px 24px -6px rgba(18, 78, 40, 0.36),
-    inset 0 2px 3px rgba(255, 255, 255, 0.72),
-    inset 0 -2px 5px rgba(152, 238, 180, 0.38);
+    0 12px 24px -6px rgba(18, 78, 40, 0.34),
+    inset 0 2px 3px rgba(255, 255, 255, 0.78),
+    inset 0 -2px 5px rgba(162, 240, 188, 0.42);
 }
 
-/* 3. Frosted Liquid Glass Surfaces Across Header, Hero, Cards, Toolbar & Modals */
+/* 4. All-Site Frosted Liquid Glass Surfaces (Header, Hero, Cards, Inputs, Badges, Tables, Accordions, Modals) */
 .site-header {
-  background: linear-gradient(180deg, rgba(250, 249, 244, 0.68) 0%, rgba(244, 242, 234, 0.54) 100%);
+  background: linear-gradient(180deg, rgba(250, 252, 249, 0.66) 0%, rgba(238, 244, 239, 0.52) 100%);
   backdrop-filter: blur(26px) saturate(195%);
   -webkit-backdrop-filter: blur(26px) saturate(195%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.78);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.84);
   box-shadow:
-    0 10px 30px -10px rgba(16, 38, 24, 0.08),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.65);
+    0 10px 30px -10px rgba(16, 38, 24, 0.09),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.72);
 }
 
 .site-header.is-scrolled {
-  background: linear-gradient(180deg, rgba(252, 251, 247, 0.76) 0%, rgba(242, 245, 239, 0.64) 100%);
+  background: linear-gradient(180deg, rgba(252, 254, 252, 0.76) 0%, rgba(238, 245, 240, 0.62) 100%);
   box-shadow:
     0 18px 42px -12px rgba(16, 38, 24, 0.14),
-    inset 0 1.5px 2px rgba(255, 255, 255, 0.9),
-    inset 0 -1.5px 3px rgba(255, 255, 255, 0.55);
+    inset 0 1.5px 2px rgba(255, 255, 255, 0.92),
+    inset 0 -1.5px 3px rgba(255, 255, 255, 0.6);
+}
+
+.demo-note,
+.sim-pill,
+.product-badge,
+.group-percent-pill {
+  backdrop-filter: blur(18px) saturate(190%);
+  -webkit-backdrop-filter: blur(18px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.88);
+  box-shadow:
+    0 8px 18px -6px rgba(15, 38, 24, 0.12),
+    inset 0 1.5px 2px rgba(255, 255, 255, 0.94),
+    inset 0 -1.5px 3px rgba(255, 255, 255, 0.5);
+}
+
+.favorite-button {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.82) 0%, rgba(232, 242, 235, 0.58) 100%) !important;
+  backdrop-filter: blur(18px) saturate(190%);
+  -webkit-backdrop-filter: blur(18px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.92) !important;
+  box-shadow:
+    0 10px 22px -6px rgba(12, 32, 20, 0.22),
+    inset 0 2px 2.5px rgba(255, 255, 255, 0.98),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.6);
 }
 
 .hero-banner-shell {
   background:
-    radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0) 48%),
-    radial-gradient(circle at 88% 82%, rgba(242, 192, 92, 0.18) 0%, rgba(242, 192, 92, 0) 46%),
-    linear-gradient(135deg, rgba(232, 244, 234, 0.68) 0%, rgba(246, 244, 235, 0.58) 54%, rgba(224, 239, 227, 0.64) 100%);
-  backdrop-filter: blur(24px) saturate(185%);
-  -webkit-backdrop-filter: blur(24px) saturate(185%);
-  border: 1px solid rgba(255, 255, 255, 0.86);
+    radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.78) 0%, rgba(255, 255, 255, 0) 48%),
+    radial-gradient(circle at 88% 82%, rgba(168, 232, 192, 0.24) 0%, rgba(168, 232, 192, 0) 46%),
+    linear-gradient(135deg, rgba(232, 244, 235, 0.68) 0%, rgba(246, 249, 246, 0.56) 54%, rgba(220, 238, 225, 0.62) 100%);
+  backdrop-filter: blur(26px) saturate(190%);
+  -webkit-backdrop-filter: blur(26px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.88);
   box-shadow:
     0 28px 64px -18px rgba(16, 42, 26, 0.15),
     0 6px 18px rgba(16, 42, 26, 0.06),
-    inset 0 2.5px 4px rgba(255, 255, 255, 0.95),
-    inset 0 -2px 6px rgba(255, 255, 255, 0.52);
+    inset 0 2.5px 4px rgba(255, 255, 255, 0.96),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.56);
 }
 
 .hero-highlights {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(246, 249, 246, 0.46) 100%);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-top: 1px solid rgba(255, 255, 255, 0.84);
-  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.88);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.64) 0%, rgba(238, 246, 240, 0.46) 100%);
+  backdrop-filter: blur(22px) saturate(185%);
+  -webkit-backdrop-filter: blur(22px) saturate(185%);
+  border-top: 1px solid rgba(255, 255, 255, 0.88);
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.92);
 }
 
-.hero-float-chip {
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.78) 0%, rgba(238, 245, 239, 0.58) 100%);
-  backdrop-filter: blur(20px) saturate(195%);
-  -webkit-backdrop-filter: blur(20px) saturate(195%);
+.highlight-icon,
+.value-feature-icon {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.82) 0%, rgba(216, 238, 222, 0.54) 100%);
+  backdrop-filter: blur(16px) saturate(185%);
+  -webkit-backdrop-filter: blur(16px) saturate(185%);
   border: 1px solid rgba(255, 255, 255, 0.92);
   box-shadow:
-    0 16px 32px -8px rgba(12, 32, 20, 0.24),
-    inset 0 2px 3px rgba(255, 255, 255, 0.98),
+    0 8px 18px -6px rgba(16, 42, 26, 0.14),
+    inset 0 2px 2.5px rgba(255, 255, 255, 0.98),
     inset 0 -2px 4px rgba(255, 255, 255, 0.58);
 }
 
+.hero-float-chip {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.8) 0%, rgba(232, 244, 235, 0.58) 100%);
+  backdrop-filter: blur(22px) saturate(195%);
+  -webkit-backdrop-filter: blur(22px) saturate(195%);
+  border: 1px solid rgba(255, 255, 255, 0.94);
+  box-shadow:
+    0 16px 32px -8px rgba(12, 32, 20, 0.24),
+    inset 0 2px 3px rgba(255, 255, 255, 0.98),
+    inset 0 -2px 4px rgba(255, 255, 255, 0.62);
+}
+
+/* Search Input & Select Dropdowns as Frosted Glass Capsules */
+.search-input-wrap input,
+.select-field select,
+.inline-form-row input,
+.stacked-form select,
+.demo-checkout-options select,
+.demo-checkout-options input,
+.admin-product-form input,
+.admin-product-form textarea {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.76) 0%, rgba(236, 244, 238, 0.52) 100%);
+  backdrop-filter: blur(18px) saturate(185%);
+  -webkit-backdrop-filter: blur(18px) saturate(185%);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow:
+    0 6px 16px -6px rgba(16, 38, 24, 0.08),
+    inset 0 2px 3px rgba(255, 255, 255, 0.95),
+    inset 0 -1.5px 3px rgba(255, 255, 255, 0.55);
+}
+
+/* All Section Cards, Panels, Accordions & Containers as Frosted Liquid Glass */
 .catalog-toolbar,
 .product-card,
 .bento-card,
-.trust-strip-card,
-.market-table-card,
-.support-card,
-.journey-card,
-.faq-item {
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.72) 0%, rgba(248, 247, 242, 0.54) 100%);
-  backdrop-filter: blur(22px) saturate(185%);
-  -webkit-backdrop-filter: blur(22px) saturate(185%);
-  border: 1px solid rgba(255, 255, 255, 0.86);
+.value-feature-card,
+.market-table-wrap,
+.support-section,
+.workflow-section,
+.support-list details,
+.workflow-list li,
+.retention-box,
+.faq-list details,
+.group-panel,
+.market-quick-item,
+.farmer-modal-card,
+.admin-metric,
+.admin-order-row,
+.tracking-card,
+.cart-line {
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.7) 0%, rgba(238, 246, 240, 0.48) 100%);
+  backdrop-filter: blur(22px) saturate(190%);
+  -webkit-backdrop-filter: blur(22px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.88);
   box-shadow:
-    0 18px 42px -14px rgba(16, 38, 24, 0.11),
-    0 4px 12px rgba(16, 38, 24, 0.04),
-    inset 0 2px 3px rgba(255, 255, 255, 0.94),
-    inset 0 -2px 5px rgba(255, 255, 255, 0.48);
+    0 18px 42px -14px rgba(16, 38, 24, 0.12),
+    0 4px 12px rgba(16, 38, 24, 0.05),
+    inset 0 2px 3px rgba(255, 255, 255, 0.96),
+    inset 0 -2px 5px rgba(255, 255, 255, 0.54);
 }
 
 .product-card:hover,
-.bento-card:hover {
-  border-color: rgba(255, 244, 212, 0.96);
+.bento-card:hover,
+.value-feature-card:hover,
+.support-list details:hover,
+.faq-list details:hover {
+  border-color: rgba(255, 255, 255, 0.98);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.84) 0%, rgba(226, 244, 232, 0.6) 100%);
   box-shadow:
-    0 26px 52px -14px rgba(16, 42, 26, 0.18),
-    0 8px 22px -6px rgba(214, 148, 38, 0.16),
-    inset 0 2.5px 4px rgba(255, 255, 255, 0.98),
-    inset 0 -2.5px 6px rgba(255, 238, 194, 0.55);
+    0 26px 52px -14px rgba(16, 46, 28, 0.18),
+    0 8px 22px -6px rgba(32, 118, 62, 0.12),
+    inset 0 2.5px 4px rgba(255, 255, 255, 1),
+    inset 0 -2.5px 6px rgba(255, 255, 255, 0.72);
 }
 
 .dialog-panel {
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.84) 0%, rgba(246, 245, 238, 0.72) 100%);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.82) 0%, rgba(236, 245, 238, 0.68) 100%);
   backdrop-filter: blur(28px) saturate(195%);
   -webkit-backdrop-filter: blur(28px) saturate(195%);
-  border: 1px solid rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.94);
   box-shadow:
     0 32px 72px -16px rgba(12, 32, 20, 0.28),
-    inset 0 2.5px 4px rgba(255, 255, 255, 0.96),
-    inset 0 -2px 6px rgba(255, 255, 255, 0.56);
+    inset 0 2.5px 4px rgba(255, 255, 255, 0.98),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.62);
+}
+
+.toast {
+  background: linear-gradient(145deg, rgba(22, 68, 38, 0.84) 0%, rgba(14, 46, 26, 0.88) 100%);
+  backdrop-filter: blur(22px) saturate(190%);
+  -webkit-backdrop-filter: blur(22px) saturate(190%);
+  border: 1px solid rgba(204, 248, 218, 0.65);
+  box-shadow:
+    0 18px 38px -8px rgba(10, 32, 18, 0.36),
+    inset 0 2px 3px rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 1080px) {
+  .mobile-bottom-nav {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.76) 0%, rgba(236, 245, 238, 0.66) 100%);
+    backdrop-filter: blur(24px) saturate(195%);
+    -webkit-backdrop-filter: blur(24px) saturate(195%);
+    border-top: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow:
+      0 -10px 28px rgba(15, 38, 24, 0.1),
+      inset 0 2px 3px rgba(255, 255, 255, 0.94);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

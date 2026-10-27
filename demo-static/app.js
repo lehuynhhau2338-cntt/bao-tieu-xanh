@@ -1842,7 +1842,7 @@ function initFramerScrollEffects() {
 
 function initInteractiveTiltAndSpotlight() {
   let activeCard = null;
-  const liquidSelector = ".liquid-capsule, .button, .view-all-btn, .cart-trigger, .motion-toggle-btn, .icon-action-btn, .filter-chip";
+  const liquidSelector = ".main-navigation > a, .main-navigation > .nav-link, .liquid-capsule, .button, .view-all-btn, .cart-trigger, .motion-toggle-btn, .icon-action-btn, #category-filters button, .recent-order-chip, .admin-tabs button, .close-button";
 
   function resetCard(card) {
     if (!card) return;
