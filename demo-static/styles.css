@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/lora-variable-latin.woff2") format("woff2");
+  src: url("assets/fonts/lora-variable-latin.woff2") format("woff2"),
+       url("../assets/fonts/lora-variable-latin.woff2") format("woff2");
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
@@ -9,7 +10,8 @@
 
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/lora-variable-vietnamese.woff2") format("woff2");
+  src: url("assets/fonts/lora-variable-vietnamese.woff2") format("woff2"),
+       url("../assets/fonts/lora-variable-vietnamese.woff2") format("woff2");
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
@@ -18,7 +20,8 @@
 
 @font-face {
   font-family: "Be Vietnam Pro";
-  src: url("../assets/fonts/be-vietnam-pro-400-latin.woff2") format("woff2");
+  src: url("assets/fonts/be-vietnam-pro-400-latin.woff2") format("woff2"),
+       url("../assets/fonts/be-vietnam-pro-400-latin.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -27,7 +30,8 @@
 
 @font-face {
   font-family: "Be Vietnam Pro";
-  src: url("../assets/fonts/be-vietnam-pro-400-vietnamese.woff2") format("woff2");
+  src: url("assets/fonts/be-vietnam-pro-400-vietnamese.woff2") format("woff2"),
+       url("../assets/fonts/be-vietnam-pro-400-vietnamese.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -36,7 +40,8 @@
 
 @font-face {
   font-family: "Be Vietnam Pro";
-  src: url("../assets/fonts/be-vietnam-pro-600-latin.woff2") format("woff2");
+  src: url("assets/fonts/be-vietnam-pro-600-latin.woff2") format("woff2"),
+       url("../assets/fonts/be-vietnam-pro-600-latin.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -45,7 +50,8 @@
 
 @font-face {
   font-family: "Be Vietnam Pro";
-  src: url("../assets/fonts/be-vietnam-pro-600-vietnamese.woff2") format("woff2");
+  src: url("assets/fonts/be-vietnam-pro-600-vietnamese.woff2") format("woff2"),
+       url("../assets/fonts/be-vietnam-pro-600-vietnamese.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -54,7 +60,8 @@
 
 @font-face {
   font-family: "Be Vietnam Pro";
-  src: url("../assets/fonts/be-vietnam-pro-700-latin.woff2") format("woff2");
+  src: url("assets/fonts/be-vietnam-pro-700-latin.woff2") format("woff2"),
+       url("../assets/fonts/be-vietnam-pro-700-latin.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -63,7 +70,8 @@
 
 @font-face {
   font-family: "Be Vietnam Pro";
-  src: url("../assets/fonts/be-vietnam-pro-700-vietnamese.woff2") format("woff2");
+  src: url("assets/fonts/be-vietnam-pro-700-vietnamese.woff2") format("woff2"),
+       url("../assets/fonts/be-vietnam-pro-700-vietnamese.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -99,7 +107,7 @@
   --focus-ring: #b86b00;
 
   /* Typography */
-  --font-display: "Lora", Georgia, "Times New Roman", serif;
+  --font-display: "Lora", "Times New Roman", "Be Vietnam Pro", serif;
   --font-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --text-xs: 0.78rem;
   --text-small: 0.875rem;
